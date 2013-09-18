@@ -13,3 +13,4 @@ features[image][] = carousel
 features[image][] = inline
 features[image][] = leading
 features[image][] = sidebar_teaser
+features[image][] = small

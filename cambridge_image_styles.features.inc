@@ -122,5 +122,33 @@ function cambridge_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: small.
+  $styles['small'] = array(
+    'name' => 'small',
+    'label' => 'Small',
+    'effects' => array(
+      1 => array(
+        'label' => 'Javascript crop',
+        'help' => 'Create a crop with a javascript toolbox.',
+        'effect callback' => 'imagecrop_effect',
+        'form callback' => 'imagecrop_effect_form',
+        'summary theme' => 'imagecrop_effect_summary',
+        'module' => 'imagecrop',
+        'name' => 'imagecrop_javascript',
+        'data' => array(
+          'width' => 153,
+          'height' => 153,
+          'xoffset' => 'center',
+          'yoffset' => 'center',
+          'resizable' => 0,
+          'downscaling' => 0,
+          'aspect_ratio' => 'CROP',
+          'disable_if_no_data' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
